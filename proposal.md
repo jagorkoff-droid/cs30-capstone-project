@@ -16,6 +16,8 @@
 - A matchmaking or lobby system allowing players to join a server or pick a game
 
 ## Nice to have
+- Selection of maps
+- Addition to credit system where if you die, you can spectate the currently alive players and bet on who you think will win (depending on gamemode), potentially earning extra money for the next round
 - Use Rapier for 3D collision physics
 - Create a node.js backend server using Websockets, this server must run a “headless” version of the physics engine to verify player positions and confirm hits
 - Create a database (SQLite) allowing for consistent and stored player data
