@@ -31,7 +31,7 @@ class Player {
     this.yaw -= dx * this.sensitivity;
     this.pitch -= dy * this.sensitivity;
 
-    // Cap pitch
+    // Clamp pitch
     const maxPitch = Math.PI / 2 - 0.05;
     this.pitch = Math.max(-maxPitch, Math.min(maxPitch, this.pitch));
 
