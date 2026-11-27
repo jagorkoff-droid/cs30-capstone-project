@@ -37,9 +37,11 @@
 
       const playerScript = document.createElement('script');
       playerScript.src = 'player.js';
+      playerScript.type = 'module';
       playerScript.onload = () => {
         const script = document.createElement('script');
         script.src = 'sketch.js';
+        script.type = 'module';
         document.body.appendChild(script);
       };
       document.body.appendChild(playerScript);

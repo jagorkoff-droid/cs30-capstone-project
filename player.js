@@ -1,9 +1,9 @@
 // Player handler module
 // Handles first-person looking, WASD movement, sprinting, crouching, jumping, and potentially simple collisions
 
-class Player {
-  constructor() {
-    this.camera = camera;
+export class Player {
+  constructor(playerCamera) {
+    this.camera = playerCamera;
 
     this.camera.rotation.order = "YXZ";
 
@@ -17,7 +17,7 @@ class Player {
     this.currentHeight = this.standHeight;
 
     this.walkSpeed = 8;
-    this.sprintSpeed = 12;
+    this.sprintSpeed = 18;
     this.crouchSpeed = 4;
     this.jumpForce = 8;
     this.gravity = 24;
